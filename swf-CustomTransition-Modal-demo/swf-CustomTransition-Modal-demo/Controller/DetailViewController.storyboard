@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UXU-fx-e7d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DetailViewController-->
+        <scene sceneID="Daj-gI-qwp">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" title="DetailViewController" id="UXU-fx-e7d" customClass="DetailViewController" customModule="swf_CustomTransition_Modal_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lFQ-6N-9rU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VHZ-xZ-pFc">
+                                <rect key="frame" x="0.0" y="269" width="375" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lu5-vY-XFB">
+                                <rect key="frame" x="164" y="528" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="didTapDismiss:" destination="UXU-fx-e7d" eventType="touchUpInside" id="kzJ-96-WZi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VHZ-xZ-pFc" firstAttribute="trailing" secondItem="PPH-lq-LY4" secondAttribute="trailing" id="1X4-4r-n4a"/>
+                            <constraint firstItem="PPH-lq-LY4" firstAttribute="bottom" secondItem="Lu5-vY-XFB" secondAttribute="bottom" constant="109" id="4CL-i3-bMD"/>
+                            <constraint firstItem="Lu5-vY-XFB" firstAttribute="centerX" secondItem="lFQ-6N-9rU" secondAttribute="centerX" id="YCy-VX-jWT"/>
+                            <constraint firstItem="Lu5-vY-XFB" firstAttribute="top" secondItem="VHZ-xZ-pFc" secondAttribute="bottom" constant="131" id="gIE-Zl-l6c"/>
+                            <constraint firstItem="VHZ-xZ-pFc" firstAttribute="leading" secondItem="PPH-lq-LY4" secondAttribute="leading" id="kd8-XK-JGt"/>
+                            <constraint firstItem="VHZ-xZ-pFc" firstAttribute="top" secondItem="PPH-lq-LY4" secondAttribute="top" constant="249" id="on4-3X-SKU"/>
+                            <constraint firstItem="PPH-lq-LY4" firstAttribute="bottom" secondItem="VHZ-xZ-pFc" secondAttribute="bottom" constant="270" id="ynU-gG-STS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PPH-lq-LY4"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="VHZ-xZ-pFc" id="p9s-rc-Gq7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LdR-En-dZe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.599999999999994" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>

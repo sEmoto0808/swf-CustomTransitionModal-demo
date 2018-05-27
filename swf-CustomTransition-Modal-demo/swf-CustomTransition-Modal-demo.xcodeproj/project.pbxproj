@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A2FE295320B8A64700F8236D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE295220B8A64700F8236D /* AppDelegate.swift */; };
+		A2FE295520B8A64700F8236D /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE295420B8A64700F8236D /* ListViewController.swift */; };
+		A2FE295820B8A64700F8236D /* ListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FE295620B8A64700F8236D /* ListViewController.storyboard */; };
+		A2FE295A20B8A64900F8236D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2FE295920B8A64900F8236D /* Assets.xcassets */; };
+		A2FE295D20B8A64900F8236D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FE295B20B8A64900F8236D /* LaunchScreen.storyboard */; };
+		A2FE296820B8A64900F8236D /* swf_CustomTransition_Modal_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE296720B8A64900F8236D /* swf_CustomTransition_Modal_demoTests.swift */; };
+		A2FE297620B8A6AC00F8236D /* ZoomModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE297520B8A6AC00F8236D /* ZoomModalTransitionDelegate.swift */; };
+		A2FE297920B8A6BD00F8236D /* ZoomPresentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE297720B8A6BD00F8236D /* ZoomPresentedAnimator.swift */; };
+		A2FE297A20B8A6BD00F8236D /* ZoomDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE297820B8A6BD00F8236D /* ZoomDismissAnimator.swift */; };
+		A2FE297F20B8A80600F8236D /* ListCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE297D20B8A80600F8236D /* ListCollectionCell.swift */; };
+		A2FE298020B8A80600F8236D /* ListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE297E20B8A80600F8236D /* ListProvider.swift */; };
+		A2FE298220B8A87500F8236D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FE298120B8A87500F8236D /* DetailViewController.swift */; };
+		A2FE298420B8A88900F8236D /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2FE298320B8A88900F8236D /* DetailViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A2FE296420B8A64900F8236D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A2FE294720B8A64700F8236D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A2FE294E20B8A64700F8236D;
+			remoteInfo = "swf-CustomTransition-Modal-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A2FE294F20B8A64700F8236D /* swf-CustomTransition-Modal-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swf-CustomTransition-Modal-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FE295220B8A64700F8236D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2FE295420B8A64700F8236D /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		A2FE295720B8A64700F8236D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ListViewController.storyboard; sourceTree = "<group>"; };
+		A2FE295920B8A64900F8236D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2FE295C20B8A64900F8236D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A2FE295E20B8A64900F8236D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FE296320B8A64900F8236D /* swf-CustomTransition-Modal-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swf-CustomTransition-Modal-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2FE296720B8A64900F8236D /* swf_CustomTransition_Modal_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swf_CustomTransition_Modal_demoTests.swift; sourceTree = "<group>"; };
+		A2FE296920B8A64900F8236D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2FE297520B8A6AC00F8236D /* ZoomModalTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomModalTransitionDelegate.swift; sourceTree = "<group>"; };
+		A2FE297720B8A6BD00F8236D /* ZoomPresentedAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomPresentedAnimator.swift; sourceTree = "<group>"; };
+		A2FE297820B8A6BD00F8236D /* ZoomDismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomDismissAnimator.swift; sourceTree = "<group>"; };
+		A2FE297D20B8A80600F8236D /* ListCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCollectionCell.swift; sourceTree = "<group>"; };
+		A2FE297E20B8A80600F8236D /* ListProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListProvider.swift; sourceTree = "<group>"; };
+		A2FE298120B8A87500F8236D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A2FE298320B8A88900F8236D /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2FE294C20B8A64700F8236D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FE296020B8A64900F8236D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2FE294620B8A64700F8236D = {
+			isa = PBXGroup;
+			children = (
+				A2FE295120B8A64700F8236D /* swf-CustomTransition-Modal-demo */,
+				A2FE296620B8A64900F8236D /* swf-CustomTransition-Modal-demoTests */,
+				A2FE295020B8A64700F8236D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A2FE295020B8A64700F8236D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE294F20B8A64700F8236D /* swf-CustomTransition-Modal-demo.app */,
+				A2FE296320B8A64900F8236D /* swf-CustomTransition-Modal-demoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2FE295120B8A64700F8236D /* swf-CustomTransition-Modal-demo */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE297C20B8A7DA00F8236D /* View */,
+				A2FE297B20B8A7BB00F8236D /* Controller */,
+				A2FE297220B8A66000F8236D /* CustomTransition */,
+				A2FE295220B8A64700F8236D /* AppDelegate.swift */,
+				A2FE295920B8A64900F8236D /* Assets.xcassets */,
+				A2FE295B20B8A64900F8236D /* LaunchScreen.storyboard */,
+				A2FE295E20B8A64900F8236D /* Info.plist */,
+			);
+			path = "swf-CustomTransition-Modal-demo";
+			sourceTree = "<group>";
+		};
+		A2FE296620B8A64900F8236D /* swf-CustomTransition-Modal-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE296720B8A64900F8236D /* swf_CustomTransition_Modal_demoTests.swift */,
+				A2FE296920B8A64900F8236D /* Info.plist */,
+			);
+			path = "swf-CustomTransition-Modal-demoTests";
+			sourceTree = "<group>";
+		};
+		A2FE297220B8A66000F8236D /* CustomTransition */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE297520B8A6AC00F8236D /* ZoomModalTransitionDelegate.swift */,
+				A2FE297820B8A6BD00F8236D /* ZoomDismissAnimator.swift */,
+				A2FE297720B8A6BD00F8236D /* ZoomPresentedAnimator.swift */,
+			);
+			path = CustomTransition;
+			sourceTree = "<group>";
+		};
+		A2FE297B20B8A7BB00F8236D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE295420B8A64700F8236D /* ListViewController.swift */,
+				A2FE298320B8A88900F8236D /* DetailViewController.storyboard */,
+				A2FE298120B8A87500F8236D /* DetailViewController.swift */,
+				A2FE295620B8A64700F8236D /* ListViewController.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A2FE297C20B8A7DA00F8236D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A2FE297D20B8A80600F8236D /* ListCollectionCell.swift */,
+				A2FE297E20B8A80600F8236D /* ListProvider.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2FE294E20B8A64700F8236D /* swf-CustomTransition-Modal-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2FE296C20B8A64900F8236D /* Build configuration list for PBXNativeTarget "swf-CustomTransition-Modal-demo" */;
+			buildPhases = (
+				A2FE294B20B8A64700F8236D /* Sources */,
+				A2FE294C20B8A64700F8236D /* Frameworks */,
+				A2FE294D20B8A64700F8236D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swf-CustomTransition-Modal-demo";
+			productName = "swf-CustomTransition-Modal-demo";
+			productReference = A2FE294F20B8A64700F8236D /* swf-CustomTransition-Modal-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A2FE296220B8A64900F8236D /* swf-CustomTransition-Modal-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2FE296F20B8A64900F8236D /* Build configuration list for PBXNativeTarget "swf-CustomTransition-Modal-demoTests" */;
+			buildPhases = (
+				A2FE295F20B8A64900F8236D /* Sources */,
+				A2FE296020B8A64900F8236D /* Frameworks */,
+				A2FE296120B8A64900F8236D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A2FE296520B8A64900F8236D /* PBXTargetDependency */,
+			);
+			name = "swf-CustomTransition-Modal-demoTests";
+			productName = "swf-CustomTransition-Modal-demoTests";
+			productReference = A2FE296320B8A64900F8236D /* swf-CustomTransition-Modal-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2FE294720B8A64700F8236D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = S.Emoto;
+				TargetAttributes = {
+					A2FE294E20B8A64700F8236D = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A2FE296220B8A64900F8236D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A2FE294E20B8A64700F8236D;
+					};
+				};
+			};
+			buildConfigurationList = A2FE294A20B8A64700F8236D /* Build configuration list for PBXProject "swf-CustomTransition-Modal-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2FE294620B8A64700F8236D;
+			productRefGroup = A2FE295020B8A64700F8236D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2FE294E20B8A64700F8236D /* swf-CustomTransition-Modal-demo */,
+				A2FE296220B8A64900F8236D /* swf-CustomTransition-Modal-demoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2FE294D20B8A64700F8236D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FE298420B8A88900F8236D /* DetailViewController.storyboard in Resources */,
+				A2FE295D20B8A64900F8236D /* LaunchScreen.storyboard in Resources */,
+				A2FE295A20B8A64900F8236D /* Assets.xcassets in Resources */,
+				A2FE295820B8A64700F8236D /* ListViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FE296120B8A64900F8236D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2FE294B20B8A64700F8236D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FE297920B8A6BD00F8236D /* ZoomPresentedAnimator.swift in Sources */,
+				A2FE297F20B8A80600F8236D /* ListCollectionCell.swift in Sources */,
+				A2FE298020B8A80600F8236D /* ListProvider.swift in Sources */,
+				A2FE295520B8A64700F8236D /* ListViewController.swift in Sources */,
+				A2FE297620B8A6AC00F8236D /* ZoomModalTransitionDelegate.swift in Sources */,
+				A2FE295320B8A64700F8236D /* AppDelegate.swift in Sources */,
+				A2FE297A20B8A6BD00F8236D /* ZoomDismissAnimator.swift in Sources */,
+				A2FE298220B8A87500F8236D /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2FE295F20B8A64900F8236D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2FE296820B8A64900F8236D /* swf_CustomTransition_Modal_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A2FE296520B8A64900F8236D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A2FE294E20B8A64700F8236D /* swf-CustomTransition-Modal-demo */;
+			targetProxy = A2FE296420B8A64900F8236D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A2FE295620B8A64700F8236D /* ListViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2FE295720B8A64700F8236D /* Base */,
+			);
+			name = ListViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		A2FE295B20B8A64900F8236D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2FE295C20B8A64900F8236D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2FE296A20B8A64900F8236D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2FE296B20B8A64900F8236D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A2FE296D20B8A64900F8236D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "swf-CustomTransition-Modal-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sEmoto.jp.swf-CustomTransition-Modal-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A2FE296E20B8A64900F8236D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "swf-CustomTransition-Modal-demo/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sEmoto.jp.swf-CustomTransition-Modal-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A2FE297020B8A64900F8236D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "swf-CustomTransition-Modal-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sEmoto.jp.swf-CustomTransition-Modal-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swf-CustomTransition-Modal-demo.app/swf-CustomTransition-Modal-demo";
+			};
+			name = Debug;
+		};
+		A2FE297120B8A64900F8236D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WCRE7XME38;
+				INFOPLIST_FILE = "swf-CustomTransition-Modal-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "sEmoto.jp.swf-CustomTransition-Modal-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/swf-CustomTransition-Modal-demo.app/swf-CustomTransition-Modal-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2FE294A20B8A64700F8236D /* Build configuration list for PBXProject "swf-CustomTransition-Modal-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2FE296A20B8A64900F8236D /* Debug */,
+				A2FE296B20B8A64900F8236D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2FE296C20B8A64900F8236D /* Build configuration list for PBXNativeTarget "swf-CustomTransition-Modal-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2FE296D20B8A64900F8236D /* Debug */,
+				A2FE296E20B8A64900F8236D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2FE296F20B8A64900F8236D /* Build configuration list for PBXNativeTarget "swf-CustomTransition-Modal-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2FE297020B8A64900F8236D /* Debug */,
+				A2FE297120B8A64900F8236D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2FE294720B8A64700F8236D /* Project object */;
+}
