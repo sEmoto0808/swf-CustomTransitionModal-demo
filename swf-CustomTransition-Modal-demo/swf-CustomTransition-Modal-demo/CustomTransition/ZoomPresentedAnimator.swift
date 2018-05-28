@@ -8,9 +8,7 @@
 
 import UIKit
 
-class ZoomPresentedAnimator: NSObject {
-
-}
+class ZoomPresentedAnimator: NSObject {}
 
 extension ZoomPresentedAnimator: UIViewControllerAnimatedTransitioning {
     
@@ -19,6 +17,7 @@ extension ZoomPresentedAnimator: UIViewControllerAnimatedTransitioning {
         return 0.4
     }
     
+    //MARK: - アニメーションの実装
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         presentedTransition(transitionContext: transitionContext)
     }

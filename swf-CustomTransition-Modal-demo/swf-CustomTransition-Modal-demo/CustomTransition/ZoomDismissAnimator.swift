@@ -8,16 +8,16 @@
 
 import UIKit
 
-class ZoomDismissAnimator: NSObject {
-
-}
+class ZoomDismissAnimator: NSObject {}
 
 extension ZoomDismissAnimator: UIViewControllerAnimatedTransitioning {
     
+    //MARK: - アニメーションの時間
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.4
     }
     
+    //MARK: - アニメーションの実装
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         dismissTransition(transitionContext: transitionContext)
     }

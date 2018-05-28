@@ -13,13 +13,13 @@ class ZoomModalTransitionDelegate: NSObject {
 
 extension ZoomModalTransitionDelegate: UIViewControllerTransitioningDelegate {
     
-    func animationControllerForPresentedController(forPresented presented: UIViewController,
-                                                   presenting: UIViewController,
-                                                   source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forPresented presented: UIViewController,
+                             presenting: UIViewController,
+                             source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return ZoomPresentedAnimator()
     }
 
-    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func animationController(forDismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         return ZoomDismissAnimator()
     }
 }
